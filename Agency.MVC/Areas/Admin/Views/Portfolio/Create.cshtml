@@ -1,0 +1,28 @@
+﻿@using Agency.BUSINESS.ViewModels;
+@model CreatePortfolioVM
+
+
+
+<html>
+    <body>
+    <div class="container">
+       <form method="post">
+            <div class="form-group">
+                <label asp-for="Title">Title</label>
+                <input asp-for="Title" type="text" class="form-control" aria-describedby="emailHelp" placeholder="Title">
+            </div>
+            <div class="form-group">
+                <label asp-for="Subtitle">Category</label>
+                <input asp-for="Subtitle" type="text" class="form-control" aria-describedby="emailHelp" placeholder="Category">
+            </div>
+            <form>
+                <div class="form-group">
+                    <label asp-for="ImageUrl">Example file input</label>
+                    <input asp-for="ImageUrl" type="file" class="form-control-file">
+                </div>
+            </form>
+            <button asp-action="Index" asp-controller="Portfolio"  type="submit" class="btn btn-primary">Create</button>
+        </form>
+        </div>
+</body>
+</html>
